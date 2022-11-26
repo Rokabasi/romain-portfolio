@@ -9,6 +9,7 @@ import boy from "../../img/boy.png"
 import thumbup from "../../img/thumbup.png"
 import crown from "../../img/crown.png"
 import glassesimoji from '../..//img/glassesimoji.png'
+import FloatingDiv from '../floatingDiv/FloatingDiv'
 
 function Intro() {
   return (
@@ -41,6 +42,24 @@ function Intro() {
           <img src={Vector1} alt="" />
           <img src={Vector2} alt="" />
           <img src={boy} alt="" />
+          <img src={glassesimoji} alt="" />
+          <div className='i-floating-div1'>
+            <FloatingDiv image={crown} text1='Full stack' text2='developer'/>
+          </div>
+          <div className='i-floating-div2'>
+            <FloatingDiv image={thumbup} text1='Best Design' text2='Award'/>
+          </div>
+          <div className='blur' style={{background : "rgb(238 210 255)"}}>
+
+          </div>
+          <div className='blur' style={{background : "#C1F5FF",
+            top:'17rem',
+            width:'21rem',
+            height:'11rem',
+            left:'-9rem'
+            }}>
+
+          </div>
         </div>
     </div>
   )
