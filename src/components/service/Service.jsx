@@ -21,11 +21,27 @@ function Services () {
           <div className="blur s-blurl" style={{background:"#ABF1FF94"}}></div>
         </div>
         <div className='cards'>
-            <div>
+            <div style={{left:'14rem'}}>
               <Card
               emoji = {HeartEmoji}
               heading = {'Design'}
-              detail = {"Figma,Sketch,Photoshop,Adobe,Adobe xd"}
+              detail = {"Figma Sketch Adobe"}
+
+              />
+            </div>
+            <div style={{left:'-4rem',top:"12rem"}}>
+              <Card
+              emoji = {HeartEmoji}
+              heading = {'Design'}
+              detail = {"Figma Sketch Adobe"}
+
+              />
+            </div>
+            <div style={{left:'12rem',top:"19rem"}}>
+              <Card
+              emoji = {HeartEmoji}
+              heading = {'Design'}
+              detail = {"Figma Sketch Adobe"}
 
               />
             </div>
