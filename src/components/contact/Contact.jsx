@@ -1,28 +1,39 @@
-import React from "react";
-import "./Contact.css"
-import  { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import { themeContext } from "../../Context";
+import { useContext } from "react";
+import "./Contact.css";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
-
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_2bvcm29', 'template_6ds7j3g', form.current, 'ZSAZ9oZSHZvOwyvBx')
-      .then((result) => {
+    emailjs
+      .sendForm(
+        "service_2bvcm29",
+        "template_6ds7j3g",
+        form.current,
+        "ZSAZ9oZSHZvOwyvBx"
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-      }, (error) => {
+        },
+        (error) => {
           console.log(error.text);
-      });
+        }
+      );
   };
 
   return (
     <div className="contact-form">
       <div className="w-left">
         <div className="awesome">
-          <span>Get in touch</span>
+          <span style={{ color: darkMode ? "white" : "" }}>Get in touch</span>
           <span>Contact me</span>
           <div
             className="blur s-blur1"
@@ -31,7 +42,7 @@ function Contact() {
         </div>
       </div>
       <div className="c-right">
-        <form ref={form} onSubmit={sendEmail}  action="">
+        <form ref={form} onSubmit={sendEmail} action="">
           <input
             type="text"
             name="user_name"
@@ -44,7 +55,7 @@ function Contact() {
             className="user"
             placeholder="Email"
           />
-          <textarea name="message" placeholder="message"  className="user" />
+          <textarea name="message" placeholder="message" className="user" />
           <input type="submit" value="Send" className="button" />
           <div
             className="blur c-blur1"
