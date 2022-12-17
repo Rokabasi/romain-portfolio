@@ -12,6 +12,7 @@ import glassesimoji from '../..//img/glassesimoji.png'
 import FloatingDiv from '../floatingDiv/FloatingDiv'
 import { themeContext } from '../../Context'
 
+
 function Intro() {
 
   const theme = useContext(themeContext);
@@ -47,10 +48,10 @@ function Intro() {
           <img src={Vector2} alt="" />
           <img src={boy} alt="" />
           <img src={glassesimoji} alt="" />
-          <div className='i-floating-div1'>
+          <div className='i-floating-div1' id="floating-divs2">
             <FloatingDiv style={{ color: darkMode ? "black" : "" }} image={crown} text1='Full stack' text2='developer'/>
           </div>
-          <div className='i-floating-div2' >
+          <div className='i-floating-div2' id="floating-divs1">
             <FloatingDiv image={thumbup} text1='Best Design' text2='Award'/>
           </div>
           <div className='blur' style={{background : "rgb(238 210 255)"}}>
