@@ -6,7 +6,7 @@
 }
 .w-right {
   position: relative;
-  left: 20rem;
+  left: 8rem;
 }
 .w-mainCircle {
   left: 9rem;
@@ -32,6 +32,7 @@
 .w-mainCircle > :nth-child(3) {
   top: 5rem;
   left: 6rem;
+  
 }
 .w-mainCircle > :nth-child(4) {
   top: 5rem;
@@ -42,8 +43,8 @@
   left: 6rem;
 }
 .w-secCircle {
-  width: 6rem;
-  height: 6rem;
+  width: 7rem;
+  height: 7rem;
   position: absolute;
   border-radius: 100%;
   border: 5px solid #ebebeb;

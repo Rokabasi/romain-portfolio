@@ -1,9 +1,9 @@
 import "./Portfolio.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SideBar from "../../img/sidebar.png";
 import Ecommerce from "../../img/ecommerce.png";
-import HOC from "../../img/hoc.png";
+import womenintech from "../../img/womenintech.png";
 import MusicApp from "../../img/musicapp.png";
+import vlab from "../../img/vlab.png";
 import "swiper/css";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
@@ -22,13 +22,17 @@ function Portfolio() {
         className="portfolio-slider"
       >
         <SwiperSlide>
-          <img src={SideBar} alt="" />
+          <a href="https://vlab-dataview.vercel.app/">
+            {" "}
+            <img src={vlab} alt="" />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
           <img src={Ecommerce} alt="" />
         </SwiperSlide>{" "}
         <SwiperSlide>
-          <img src={HOC} alt="" />
+          <a href="https://mwasitech7.wordifysites.com/"> <img src={womenintech} alt="" /></a>
+         
         </SwiperSlide>
         <SwiperSlide>
           <img src={MusicApp} alt="" />

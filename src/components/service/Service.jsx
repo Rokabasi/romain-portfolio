@@ -16,7 +16,7 @@ function Services() {
       <div className="awesome">
       <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
         <span>services</span>
-        <span style={{ color: darkMode ? "white" : "" ,lineHeight : "30px",fontSize:"1rem" }}>
+        <span style={{ color: darkMode ? "white" : "" ,lineHeight : "30px",fontSize:"1.2rem" }}>
         As an international full-stack developer, I cover every aspect of full-stack development - 
         <br/>
         front-end and back-end, databases, servers, APIs, DevOps, and version controlling systems.
@@ -31,21 +31,21 @@ function Services() {
         <div className="blur s-blurl" style={{ background: "#ABF1FF94" }}></div>
       </div>
       <div className="cards">
-        <div style={{ left: "25rem" }}>
+        <div style={{ left: "18rem" }}>
           <Card
             emoji={HeartEmoji}
             heading={"Design"}
             detail={"Figma Sketch Adobe"}
           />
         </div>
-        <div style={{ left: "2rem", top: "12rem" }}>
+        <div style={{ left: "-2rem", top: "14rem" }}>
           <Card
             emoji={Glasses}
             heading={"Developer"}
-            detail={"Html Css JavaScript React Node Express"}
+            detail={"HTML CSS JavaScript React Node Express"}
           />
         </div>
-        <div style={{ left: "23rem", top: "25rem" }}>
+        <div style={{ left: "18rem", top: "25rem" }}>
           <Card
             emoji={Humble}
             heading={"UI/UX"}
