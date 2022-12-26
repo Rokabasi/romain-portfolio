@@ -30,12 +30,14 @@ function Navbar() {
             <Link spy={true} to="Portfolio" smooth={true}>
               <li>Portfolio</li>
             </Link>
-            <Link spy={true} to="Testimonials" smooth={true}>
+            {/* <Link spy={true} to="Testimonials" smooth={true}>
               <li>Testimonials</li>
-            </Link>
+            </Link> */}
           </ul>
         </div>
+        <Link spy={true} to="Contact" smooth={true}>
         <button className="button n-button">Contact</button>
+        </Link>
       </div>
     </div>
   );

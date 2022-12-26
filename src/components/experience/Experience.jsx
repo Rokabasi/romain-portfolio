@@ -10,17 +10,17 @@ function Experience() {
   return (
     <div className="experience" id="Experience">
       <div className="achievement">
-        <div className="circle" style={{ color: darkMode ? "black" : "" }}>3+</div>
+        <div className="circle" style={{ color: darkMode ? "black" : "" }}>1+</div>
         <span>years</span>
         <span>Experience</span>
       </div>
       <div className="achievement">
-        <div className="circle" style={{ color: darkMode ? "black" : "" }}>20+</div>
+        <div className="circle" style={{ color: darkMode ? "black" : "" }}>10+</div>
         <span>completed</span>
         <span>projetcs</span>
       </div>
       <div className="achievement">
-        <div className="circle" style={{ color: darkMode ? "black" : "" }}>5+</div>
+        <div className="circle" style={{ color: darkMode ? "black" : "" }}>1+</div>
         <span>companies</span>
         <span>work</span>
       </div>

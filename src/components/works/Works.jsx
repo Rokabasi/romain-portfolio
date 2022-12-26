@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "./Works.css";
 import cgju from "../../img/cgju.png";
 import Fiverr from "../../img/fiverr.png";
-import Shopify from "../../img/Shopify.png";
+import digitalafrica from "../../img/digitalafrica.png";
 import kda from "../../img/kda.png";
 import vodacom from "../../img/vodacom.png";
 import mwasitech from "../../img/mwasitech.png";
@@ -35,6 +35,8 @@ function Works() {
           <br />
           Mwasi tech : build a platform for showing and popularizing women in
           tech
+          <br />
+          Digital africa : build a landing page for startup4talents challenge
         </span>
         <button className="button s-button">Here is me</button>
         <div className="blur s-blurl" style={{ background: "#ABF1FF94" }}></div>
@@ -45,7 +47,7 @@ function Works() {
             <img src={kda} style={{ width: "10rem" }} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Fiverr} alt="" />
+            <img src={digitalafrica} style={{ width: "10rem" }} alt="" />
           </div>
           <div className="w-secCircle">
             <img src={vodacom} style={{ width: "10rem" }} alt="" />
