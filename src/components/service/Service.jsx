@@ -16,10 +16,14 @@ function Services() {
       <div className="awesome">
       <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
         <span>services</span>
-        <span style={{ color: darkMode ? "white" : "" }}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <span style={{ color: darkMode ? "white" : "" ,lineHeight : "30px",fontSize:"1rem" }}>
+        As an international full-stack developer, I cover every aspect of full-stack development - 
+        <br/>
+        front-end and back-end, databases, servers, APIs, DevOps, and version controlling systems.
+
+
           <br />
-          non repudiandae architecto voluptates recusandae at aut autem?
+         Set a faster pace for the growth of your business with my full-stack development services.
         </span>
         <a href={cv} download>
           <button className="button s-button">Dowload CV</button>
@@ -27,18 +31,18 @@ function Services() {
         <div className="blur s-blurl" style={{ background: "#ABF1FF94" }}></div>
       </div>
       <div className="cards">
-        <div style={{ left: "30rem" }}>
+        <div style={{ left: "25rem" }}>
           <Card
             emoji={HeartEmoji}
             heading={"Design"}
             detail={"Figma Sketch Adobe"}
           />
         </div>
-        <div style={{ left: "5rem", top: "12rem" }}>
+        <div style={{ left: "2rem", top: "12rem" }}>
           <Card
             emoji={Glasses}
             heading={"Developer"}
-            detail={"Html Css JavaScript React express"}
+            detail={"Html Css JavaScript React Node Express"}
           />
         </div>
         <div style={{ left: "23rem", top: "25rem" }}>
