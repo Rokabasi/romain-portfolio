@@ -24,7 +24,7 @@ function Intro() {
         <div className="i-name">
             <span style={{ color: darkMode ? "white" : "" }}> Hey! I am</span>
             <span>Romain KABASI</span>
-            <span style={{ color: darkMode ? "white" : "" }}>Fullstack developper with high level of experience in web designing and development, producting the Quality work
+            <span style={{ color: darkMode ? "white" : "", fontSize:"1.1rem" }}>Fullstack developper with high level of experience in web designing and development, producting the Quality work
             </span>
         </div>
         <button className="button i-button">
