@@ -1,27 +1,44 @@
-import React from 'react'
-import './Navbar.css'
+import React from "react";
+import "./Navbar.css";
+import Toggle from "../toggle/Toggle";
+import { Link } from "react-scroll";
 
 function Navbar() {
   return (
-    <div className='n-wrapper'>
-        <div className="n-left">
-            <div className="n-name">Romain</div>
-            <span>toggle</span>
+    <div className="n-wrapper">
+      <div className="n-left">
+        <div className="n-name">Romain</div>
+        <Toggle />
+      </div>
+      <div className="n-right">
+        <div className="n-list">
+          <ul>
+            <Link
+              spy={true}
+              to="Navbar"
+              smooth={true}
+              activeClass="activeClass"
+            >
+              <li>Home</li>
+            </Link>
+            <Link spy={true} to="Services" smooth={true}>
+              <li>Services</li>
+            </Link>
+            <Link spy={true} to="Experience" smooth={true}>
+              <li>Experience</li>
+            </Link>
+            <Link spy={true} to="Portfolio" smooth={true}>
+              <li>Portfolio</li>
+            </Link>
+            <Link spy={true} to="Testimonials" smooth={true}>
+              <li>Testimonials</li>
+            </Link>
+          </ul>
         </div>
-        <div className="n-right">
-            <div className="n-list">
-                <ul>
-                    <li>Home</li>
-                    <li>Services</li>
-                    <li>Experience</li>
-                    <li>Portfolio</li>
-                    <li>Testimonials</li>
-                </ul>
-            </div>
-            <button className='button n-button'>Contact</button>
-        </div>
+        <button className="button n-button">Contact</button>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

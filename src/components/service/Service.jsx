@@ -1,21 +1,29 @@
-import React from "react";
+import React, {useContext} from "react";
 import "./Service.css";
 import Card from "../card/Card";
 import HeartEmoji from "../../img/heartemoji.png";
 import Glasses from "../../img/glasses.png";
 import Humble from "../../img/humble.png";
 import cv from "../../files/cv.pdf";
+import { themeContext } from "../../Context";
 
 function Services() {
+
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
-    <div className="services">
+    <div className="services" id="Services">
       <div className="awesome">
-        <span>My Awesome</span>
+      <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
         <span>services</span>
-        <span>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <span style={{ color: darkMode ? "white" : "" ,lineHeight : "30px",fontSize:"1.2rem" }}>
+        As an international full-stack developer, I cover every aspect of full-stack development - 
+        <br/>
+        front-end and back-end, databases, servers, APIs, DevOps, and version controlling systems.
+
+
           <br />
-          non repudiandae architecto voluptates recusandae at aut autem?
+         Set a faster pace for the growth of your business with my full-stack development services.
         </span>
         <a href={cv} download>
           <button className="button s-button">Dowload CV</button>
@@ -23,21 +31,21 @@ function Services() {
         <div className="blur s-blurl" style={{ background: "#ABF1FF94" }}></div>
       </div>
       <div className="cards">
-        <div style={{ left: "30rem" }}>
+        <div style={{ left: "18rem" }}>
           <Card
             emoji={HeartEmoji}
             heading={"Design"}
             detail={"Figma Sketch Adobe"}
           />
         </div>
-        <div style={{ left: "5rem", top: "12rem" }}>
+        <div style={{ left: "-2rem", top: "14rem" }}>
           <Card
             emoji={Glasses}
             heading={"Developer"}
-            detail={"Html Css JavaScript React express"}
+            detail={"HTML CSS JavaScript React Node Express"}
           />
         </div>
-        <div style={{ left: "23rem", top: "25rem" }}>
+        <div style={{ left: "18rem", top: "25rem" }}>
           <Card
             emoji={Humble}
             heading={"UI/UX"}
