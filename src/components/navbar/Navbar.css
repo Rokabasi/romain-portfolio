@@ -23,7 +23,7 @@
     font-weight: 400;
 }
 .n-list{
-    flex: 10;
+    flex: 8;
 }
 .n-list>ul{
     display: flex;
