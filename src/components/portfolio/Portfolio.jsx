@@ -1,5 +1,8 @@
 import "./Portfolio.css";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper";
+import 'swiper/css/pagination'
+import 'swiper/css/navigation'
 import dac from "../../img/dac.png";
 import womenintech from "../../img/womenintech.png";
 import MusicApp from "../../img/musicapp.png";
@@ -17,10 +20,12 @@ function Portfolio() {
       <span style={{ color: darkMode ? "white" : "" }}>Recent Projets</span>
       <span>Portfolio</span>
       <Swiper
+        modules={[Navigation,Pagination]}
         spaceBetween={30}
         slidesPerView={3}
         grabCursor={true}
         className="portfolio-slider"
+        pagination={{clickable:true}}
       >
         <SwiperSlide>
           <a href="https://vlab-dataview.vercel.app/">

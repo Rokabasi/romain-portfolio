@@ -1,14 +1,12 @@
 import React, { useContext } from "react";
 import "./Works.css";
 import cgju from "../../img/cgju.png";
-import Fiverr from "../../img/fiverr.png";
 import digitalafrica from "../../img/digitalafrica.png";
 import kda from "../../img/kda.png";
 import vodacom from "../../img/vodacom.png";
 import mwasitech from "../../img/mwasitech.png";
-
 import { themeContext } from "../../Context";
-import { Link } from "react-scroll";
+
 
 function Works() {
   const theme = useContext(themeContext);
@@ -31,7 +29,7 @@ function Works() {
           <br />
           Club Genial Je connais L'Univers : build an Quiz app
           <br />
-          Kinshasa Digital Academy : buil a Quiz app and youtube clone
+          Kinshasa Digital Academy : build a Quiz app and youtube clone
           <br />
           Mwasi tech : build a platform for showing and popularizing women in
           tech
